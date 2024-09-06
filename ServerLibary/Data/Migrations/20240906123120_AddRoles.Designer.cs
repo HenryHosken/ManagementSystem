@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ServerLibary.Data;
 
@@ -10,9 +11,11 @@ using ServerLibary.Data;
 namespace ServerLibary.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240906123120_AddRoles")]
+    partial class AddRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,7 +43,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ApplicationUsers");
+                    b.ToTable("applicationUsers");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.Branch", b =>
@@ -56,7 +59,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Branches");
+                    b.ToTable("branches");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.Department", b =>
@@ -72,7 +75,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("departments");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.Employee", b =>
@@ -132,7 +135,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasIndex("TownId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("employees");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.GeneralDepartment", b =>
@@ -148,26 +151,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GeneralDepartments");
-                });
-
-            modelBuilder.Entity("BaseLibary.Entities.RefreshTokenInfo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Token")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("RefreshTokenInfos");
+                    b.ToTable("generalDepartments");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.SystemRole", b =>
@@ -183,7 +167,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SystemRoles");
+                    b.ToTable("systemRoles");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.Town", b =>
@@ -199,7 +183,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Towns");
+                    b.ToTable("towns");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.UserRole", b =>
@@ -218,7 +202,7 @@ namespace ServerLibary.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("userRoles");
                 });
 
             modelBuilder.Entity("BaseLibary.Entities.Employee", b =>
