@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerLibary.Helpers
+namespace ServerLibrary.Helpers
 {
     public class JwtSection
     {

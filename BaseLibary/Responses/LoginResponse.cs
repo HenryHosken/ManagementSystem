@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseLibary.Responses
+namespace BaseLibrary.Responses
 {
     public record LoginResponse(bool flag, string Message = null!, string Token = null!, string RefreshToken = null! );
    

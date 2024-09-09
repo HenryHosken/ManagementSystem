@@ -1,13 +1,13 @@
 ﻿
-using BaseLibary.DTOs;
-using BaseLibary.Responses;
+using BaseLibrary.DTOs;
+using BaseLibrary.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerLibary.Repositories.Contracts
+namespace ServerLibrary.Repositories.Contracts
 {
     public interface IUserAccount
     {

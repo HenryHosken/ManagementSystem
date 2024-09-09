@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseLibrary.Entities
+namespace BaseLibrary.DTOs
 {
-    public class RefreshTokenInfo
+    public class UserSession
     {
-        public int Id { get; set; }
         public string? Token { get; set; }
-        public int UserId { get; set; }
+        public string? RefreshToken { get; set; }
     }
 }

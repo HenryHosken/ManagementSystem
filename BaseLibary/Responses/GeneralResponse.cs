@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseLibary.Responses
+namespace BaseLibrary.Responses
 {
     public record GeneralResponse(bool Flag, string message = null!);
     

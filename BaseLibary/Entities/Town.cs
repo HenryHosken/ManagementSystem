@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseLibary.Entities
+namespace BaseLibrary.Entities
 {
     public class Town : BaseEntity
     {

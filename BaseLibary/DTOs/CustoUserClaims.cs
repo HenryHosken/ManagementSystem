@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.DTOs
 {
-    public class RefreshToken
-    {
-        public string? Token { get; set; }
-    }
+    public record CustomUserClaims(string Id = null!, string Name = null!, string Email = null!, string Role = null!);
 }

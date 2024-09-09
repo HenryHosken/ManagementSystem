@@ -22,7 +22,7 @@
 		
 
   <ItemGroup>
-    <ProjectReference Include="..\BaseLibary\BaseLibary.csproj" />
+    <ProjectReference Include="..\BaseLibary\BaseLibrary.csproj" />
   </ItemGroup>
 
 </Project>

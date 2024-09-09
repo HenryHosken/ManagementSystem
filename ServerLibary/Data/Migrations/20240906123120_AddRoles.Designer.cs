@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ServerLibary.Data;
+using ServerLibrary.Data;
 
 #nullable disable
 
-namespace ServerLibary.Data.Migrations
+namespace ServerLibrary.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20240906123120_AddRoles")]

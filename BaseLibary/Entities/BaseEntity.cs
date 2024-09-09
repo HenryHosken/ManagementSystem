@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace BaseLibary.Entities
+namespace BaseLibrary.Entities
 {
     public class BaseEntity
     {

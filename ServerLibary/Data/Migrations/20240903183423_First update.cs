@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ServerLibary.Data.Migrations
+namespace ServerLibrary.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Firstupdate : Migration
